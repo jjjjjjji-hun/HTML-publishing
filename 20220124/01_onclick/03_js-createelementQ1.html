@@ -10,7 +10,7 @@
             // 버튼 가져오기
             var creBtn = document.getElementById("createh1"); // button
             // h1을 적재할 태그 가져오기
-            var h1Space = document.getElementById("h1space"); // div
+            var h1space = document.getElementById("h1space"); // div
 
             // 버튼에 onclick 이벤트 연결하기
             creBtn.onclick = function(){
@@ -20,8 +20,8 @@
                 var text = document.createTextNode("증식하는 h1");
                 // text를 h1에 조립하기
                 newH1.appendChild(text);
-                // 조립 완료된 h1을 h1Space에 끼워넣기
-                h1Space.appendChild(newH1);
+                // 조립 완료된 h1을 h1space에 끼워넣기
+                h1space.appendChild(newH1);
             }
         }
     </script>
