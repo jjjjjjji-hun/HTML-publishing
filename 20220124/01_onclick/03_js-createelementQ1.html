@@ -5,14 +5,22 @@
         // #h1space 내부에 #createh1을 클릭할때마다
         // h1태그(넣고싶은 단어는 마음대로 넣어주세요)가 생성되는
         // 로직을 작성해주세요.
+        // 문서 모두 로딩 후 실행할 자바스크립트 코드들
         window.onload = function(){
-            var creBtn = document.getElementById("createh1");
-            var h1Space = document.getElementById("h1space");
+            // 버튼 가져오기
+            var creBtn = document.getElementById("createh1"); // button
+            // h1을 적재할 태그 가져오기
+            var h1Space = document.getElementById("h1space"); // div
 
+            // 버튼에 onclick 이벤트 연결하기
             creBtn.onclick = function(){
+                // h1 생성
                 var newH1 = document.createElement("h1");
+                // h1에 넣을 텍스트 생성
                 var text = document.createTextNode("증식하는 h1");
+                // text를 h1에 조립하기
                 newH1.appendChild(text);
+                // 조립 완료된 h1을 h1Space에 끼워넣기
                 h1Space.appendChild(newH1);
             }
         }
