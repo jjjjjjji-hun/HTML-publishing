@@ -6,8 +6,9 @@
         원래 있던 밑줄을 없앨 수도 있습니다.
         underline(밑줄), overline(윗줄)
         line-through(가운데줄, 취소선), none(줄없앰)*/
-        a{text-decoration: underline black}
-        a{text-decoration: line-through red;}
+        a#first{text-decoration: overline black}
+        a#second{text-decoration: underline blue;}
+        a#third{text-decoration: line-through red;}
     </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,8 +17,9 @@
 </head>
 <body>
     <ul>
-        <li><a href="#">현재상영중</a></li>
-        <li><a href="#">상영예정</a></li>
+        <li><a href="#" id="first">현재상영중</a></li>
+        <li><a href="#" id="second">상영예정</a></li>
+        <li><a href="#" id="third">상영끝</a></li>
     </ul>
 </body>
 </html>

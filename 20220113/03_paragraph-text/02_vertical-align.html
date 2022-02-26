@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <style>
-        /* vertical-align은 수직 방향으로 정렬할 때 사용합니다.
+        /* vertical-align은 수직 방향으로(세로) 정렬할 때 사용합니다.
         top(상단 정렬), middle(가운데 정렬)
         bottom(하단 정렬)  폭을 넣게 만드는 원인이 되는 요소에
         걸어야 작동합니다.(사진)*/
-        p > img{vertical-align: top;}
+        p#first img{vertical-align: middle;}
+        p#second img{vertical-align: bottom;}
     </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +15,10 @@
     <title>Document</title>
 </head>
 <body>
-    <p>텍스트입니다.
+    <p id="first">텍스트입니다.
+        <img src="img/python logo.jpeg" width="300px" height="300px"/>
+    </p>
+    <p id="second">텍스트입니다.
         <img src="img/python logo.jpeg" width="300px" height="300px"/>
     </p>
 </body>
