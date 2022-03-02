@@ -3,15 +3,12 @@
 <head>
     <style>
         /*
-        display는 박스태그를 블록태그로 만들어주거나
-        블록태그를 박스태그로 만들어주거나 혹은
-        아예 박스자체를 화면에 보이지 않게(코드상으로는 존재)
-        만들어주는 역할을 합니다.
+        display는 박스태그를 블록태그로 만들어주거나 블록태그를 박스태그로 만들어주거나 혹은
+        아예 박스자체를 화면에 보이지 않게(코드상으로는 존재) 만들어주는 역할을 합니다.
         display:block; - 해당 요소를 블록속성으로 전환(줄바꿈)
         display:inline; - 해당 요소를 인라인속성으로 전환(가로로나열)
         display:inline-block; - 해당 요소를 인라인으로 만들지만
-        블록태그에서만 쓸 수 있던 몇몇 옵션(width, height, padding등)
-        을 쓸 수 있도록 허용
+        블록태그에서만 쓸 수 있던 몇몇 옵션(width, height, padding등) 을 쓸 수 있도록 허용
         display:none; - 해당 요소는 존재하지만 화면에는 표시 안함.
         */
         li{list-style: none;}
@@ -21,11 +18,17 @@
         a:hover{
             color: #369;
         }
-        #gnb li{
+        #gnb1 li{
             display: inline;
         }
-        /* li에 내장된 링크주소버튼을 좀 더 예쁘게 꾸미지*/
-        #gnb li a{
+        #gnb2 li{
+            display: block;
+        }
+        #gnb3 li{
+            display: none;
+        }
+        /* li에 내장된 링크주소버튼을 좀 더 예쁘게 꾸미기*/
+        li a{
             display: inline-block;
             background-color: #c00;
             color: #fff;
@@ -42,8 +45,24 @@
 </head>
 <body>
     <div id="container">
-        <h1>주 메뉴</h1>
-        <ul id="gnb"><!--gobal navigation bar-->
+        <h1>주 메뉴1</h1>
+        <ul id="gnb1"><!--gobal navigation bar-->
+            <li><a href="#">COMPANY</a></li>
+            <li><a href="#">PRODUCT</a></li>
+            <li><a href="#">DERVICE</a></li>
+            <li><a href="#">COMMUNITY</a></li>
+        </ul>
+        <hr/>
+        <h1>주 메뉴2</h1>
+        <ul id="gnb2"><!--gobal navigation bar-->
+            <li><a href="#">COMPANY</a></li>
+            <li><a href="#">PRODUCT</a></li>
+            <li><a href="#">DERVICE</a></li>
+            <li><a href="#">COMMUNITY</a></li>
+        </ul>
+        <hr/>
+        <h1>주 메뉴3</h1>
+        <ul id="gnb3"><!--gobal navigation bar-->
             <li><a href="#">COMPANY</a></li>
             <li><a href="#">PRODUCT</a></li>
             <li><a href="#">DERVICE</a></li>
